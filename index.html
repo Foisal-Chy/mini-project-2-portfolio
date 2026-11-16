@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#dfd6d6] text-gray-800 font-sans leading-relaxed">
+    
+    <header class="bg-neutral-900 text-white sticky top-0 z-10">
+
+      <input type="checkbox" id="menu-toggle" class="peer hidden"/>
+
+      <div
+        class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between">
+        <h1 class="text-lg md:text-2xl font-bold">Md. Foisal Hossen Chowdhury</h1>
+
+        <!--mobile -->
+        <label for="menu-toggle" class="md:hidden border border-white rounded px-3 py-1 cursor-pointer hover:bg-white hover:text-neutral-900 transition">Menu
+        </label>
+
+        <!-- desktop -->
+        <nav class="hidden md:flex gap-6 font-bold">
+          <a href="#about" class="hover:underline hover:text-yellow-300">About</a>
+          <a href="#skills" class="hover:underline hover:text-yellow-300">Skills</a>
+          <a href="#projects" class="hover:underline hover:text-yellow-300">Projects</a>
+          <a href="#contact" class="hover:underline hover:text-yellow-300">Contact</a>
+        </nav>
+      </div>
+
+      <!--mobile  -->
+      <nav class="hidden peer-checked:max-md:flex flex-col gap-3 px-4 pb-4 font-bold">
+        <a href="#about" class="block hover:text-yellow-300">About</a>
+        <a href="#skills" class="block hover:text-yellow-300">Skills</a>
+        <a href="#projects" class="block hover:text-yellow-300">Projects</a>
+        <a href="#contact" class="block hover:text-yellow-300">Contact</a>
+      </nav>
+    </header>
+
+    <main class="px-4">
+      <section id="about" class="max-w-4xl mx-auto my-8 p-6 md:p-8 bg-gray-50 rounded-xl">
+        <h2 class="text-2xl font-bold text-center mb-6">About Me</h2>
+
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+          <img src="profile.png" alt="Profile picture of Foisal Hossen" class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shrink-0"/>
+
+          <div class="text-center md:text-left">
+            <p class="mb-4">Assalamualaikum! I am <b>Md. Foisal Hossen Chowdhury</b>, a CSE student at
+              <i>International Islamic University Chittagong.</i>
+            </p>
+
+            <p>
+              I am interested in programming and development. Currently, I am
+              learning HTML, CSS, JavaScript, DSA.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="skills" class="max-w-4xl mx-auto my-8 p-6 md:p-8 bg-gray-50 rounded-xl">
+        <h2 class="text-2xl font-bold text-center mb-6">My Skills</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+          <div class="p-5 text-center border border-gray-300 rounded-lg hover:-translate-y-1 hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold">C</h3>
+            <p>Programming Fundamentals</p>
+          </div>
+
+          <div
+            class="p-5 text-center border border-gray-300 rounded-lg hover:-translate-y-1 hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold">C++</h3>
+            <p>Object-Oriented Programming</p>
+          </div>
+
+          <div
+            class="p-5 text-center border border-gray-300 rounded-lg hover:-translate-y-1 hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold">HTML5</h3>
+            <p>Website Structure</p>
+          </div>
+
+          <div class="p-5 text-center border border-gray-300 rounded-lg hover:-translate-y-1 hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold">CSS + Tailwind CSS</h3>
+            <p>Website Styling</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects" class="max-w-4xl mx-auto my-8 p-6 md:p-8 bg-gray-50 rounded-xl">
+        <h2 class="text-2xl font-bold text-center mb-6">My Projects</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <article class="p-6 border border-gray-300 rounded-lg hover:-translate-y-1 hover:shadow-lg transition">
+            <h3 class="text-lg font-semibold mb-2">Save the Bird🐦</h3>
+            <p>
+              A console-based game inspired by Flappy Bird, developed using C
+              programming. The player controls the bird and tries to avoid
+              obstacles and achieve a higher score.
+            </p>
+          </article>
+
+          <article
+            class="p-6 border border-gray-300 rounded-lg hover:-translate-y-1 hover:shadow-lg transition">
+            <h3 class="text-lg font-semibold mb-2">Cafe Management System☕</h3>
+            <p>
+              A desktop-based cafe management system developed using the Qt
+              Framework. It provides a graphical user interface for managing
+              cafe-related operations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+    
+      <section id="contact" class="max-w-4xl mx-auto my-8 p-6 md:p-8 bg-gray-50 rounded-xl">
+        <h2 class="text-2xl font-bold text-center mb-6">Contact Me</h2>
+
+        <p class="text-center mb-5">Email: foisal922@gmail.com</p>
+
+        <form class="max-w-xl mx-auto flex flex-col">
+          <label for="name" class="mt-2 mb-1">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" class="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-neutral-700"/>
+
+          <label for="email" class="mt-2 mb-1">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" class="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-neutral-700"/>
+
+          <label for="message" class="mt-2 mb-1">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." class="p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-neutral-700">
+          </textarea>
+
+          <button type="submit" class="mt-5 p-3 rounded bg-neutral-800 text-white text-base hover:bg-neutral-600 transition cursor-pointer">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+
+    <footer class="text-center p-5 bg-neutral-800 text-white">
+      <p>&copy; 2026 Md. Foisal Hossen Chowdhury. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
