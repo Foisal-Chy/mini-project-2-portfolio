@@ -27,3 +27,6 @@ mp2-portfolio/
 ├── index.html
 ├── profile.png
 └── README.md
+
+## How to Run
+Open `index.html` in a browser. An internet connection is needed to load the Tailwind CDN.
