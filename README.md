@@ -3,7 +3,7 @@
 **Course:** Software Development I (CSE-2340)
 **Assessment:** Mini Project 2 (MP2)
 **Student:** Md. Foisal Hossen Chowdhury
-**Live Site:**
+**Live Site:** https://foisal-chy.github.io/mini-project-2-portfolio/
 
 A simple, responsive personal portfolio website built with HTML and Tailwind CSS.
 
